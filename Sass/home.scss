@@ -1,0 +1,278 @@
+@use 'variables.scss';
+@use 'mixins.scss';
+
+.header {
+  @include mixins.flex(row, space-between, center);
+  position: relative;
+  padding: 2.5rem 1.5rem;
+
+  &__logo {
+    img {
+      width: 2.5rem;
+      height: auto;
+    }
+  }
+
+  label {
+    cursor: pointer;
+    position: relative;
+    z-index: 20;
+
+    img {
+      width: 2rem;
+      height: auto;
+    }
+  }
+
+  input[type="checkbox"]:not(:checked)~.header__nav {
+    transform: translate(-100%, 0);
+    transition: transform 0.5s linear;
+  }
+
+  input[type="checkbox"]:checked~.header__nav {
+    transform: translate(0, 0);
+    transition: transform 0.5s linear;
+  }
+
+  input[type="checkbox"]:not(:checked)~.menu-icon-close {
+    display: none;
+  }
+
+  input[type="checkbox"]:checked~.menu-icon-hamburger {
+    display: none;
+  }
+
+  &__nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    width: 100%;
+    height: 100dvh;
+    background-color: variables.$blue-900;
+
+    &__list {
+      list-style: none;
+      @include mixins.flex(column, center, stretch);
+      height: 100%;
+      gap: 2rem;
+
+      &__item {
+        font-size: variables.$font-size-7;
+        padding-left: 2rem;
+
+        a {
+          text-decoration: none;
+          color: variables.$white;
+        }
+      }
+    }
+  }
+}
+
+.main {
+  text-align: center;
+  padding: 1.5rem;
+
+  &__content {
+    @include mixins.flex(column, center, center);
+    gap: 2.5rem;
+    margin-bottom: 3rem;
+
+    h1 {
+      text-transform: uppercase;
+      font-weight: 100;
+      font-size: variables.$font-size-8;
+      letter-spacing: variables.$letter-spacing-2;
+
+      span {
+        font-size: variables.$font-size-3;
+        font-weight: 100;
+      }
+    }
+
+    p {
+      font-size: variables.$font-size-7;
+      line-height: 1.5rem;
+    }
+  }
+
+  &__button {
+    margin-top: 3rem;
+
+    button {
+      position: relative;
+      cursor: pointer;
+      border: none;
+      outline: none;
+      width: 9rem;
+      height: 9rem;
+      font-size: variables.$font-size-6;
+      font-weight: 100;
+      border-radius: 50%;
+      color: variables.$blue-900;
+      background-color: variables.$white;
+    }
+
+    button:hover::before {
+      content: '';
+      position: absolute;
+      top: -14%;
+      left: -14%;
+      width: 125%;
+      height: 125%;
+      border-radius: 50%;
+      background-color: rgba(255, 255, 255, 0.2);
+      animation: button 1s linear infinite;
+    }
+  }
+}
+
+// Animaciones
+@keyframes button {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.1);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+// Media Queries
+// Tablet
+@media screen and (min-width: 768px) {
+  .header {
+    padding: 2.5rem 2rem;
+
+    &__logo {
+      img {
+        width: 3rem;
+      }
+    }
+
+    label {
+      display: none;
+    }
+
+    input[type="checkbox"]:not(:checked)~.header__nav {
+      transform: translate(0, 0);
+    }
+
+    input[type="checkbox"]:checked~.header__nav {
+      transform: translate(0, 0);
+    }
+
+    &__nav {
+      position: static;
+      height: auto;
+      width: 100%;
+      background-color: transparent;
+
+      &__list {
+        @include mixins.flex(row, flex-end, stretch);
+        gap: 2.5rem;
+
+        &__item {
+          padding-left: 0rem;
+        }
+      }
+    }
+  }
+
+  .main {
+    padding: 8rem 2.5rem;
+
+    &__content {
+      gap: 2rem;
+
+      h1 {
+        font-size: variables.$font-size-6;
+
+        span {
+          font-size: variables.$font-size-1;
+        }
+      }
+
+      p {
+        width: 70%;
+        margin: 0 auto;
+        font-size: variables.$font-size-8;
+      }
+    }
+
+    &__button {
+      margin-top: 2rem;
+
+      button {
+        width: 17rem;
+        height: 17rem;
+        font-size: variables.$font-size-5;
+      }
+    }
+  }
+}
+
+// Laptop
+@media screen and (min-width: 1024px) {
+  .header {
+    padding: 2.5rem 3rem;
+
+    &__nav {
+      &__list {
+        gap: 2.5rem;
+
+        &__item {
+          cursor: pointer;
+          font-size: variables.$font-size-8;
+        }
+      }
+    }
+  }
+
+  .main {
+    @include mixins.flex(row, stretch, stretch);
+    text-align: left;
+    padding: 0;
+    padding-top: 8rem;
+    gap: 3rem;
+
+    &__content {
+      @include mixins.flex(column, flex-end, stretch);
+      width: 50%;
+      margin-bottom: 0;
+      padding-left: 5rem;
+      gap: 1.5rem;
+
+      h1 {
+        font-size: variables.$font-size-6;
+
+        span {
+          font-size: variables.$font-size-1;
+        }
+      }
+
+      p {
+        width: 100%;
+        font-size: variables.$font-size-8;
+      }
+    }
+
+    &__button {
+      width: 50%;
+      margin-top: 0;
+      padding-right: 5rem;
+
+      button {
+        float: right;
+        width: 17rem;
+        height: 17rem;
+        font-size: variables.$font-size-5;
+      }
+    }
+  }
+}

@@ -1,0 +1,39 @@
+// Variables
+@use "variables.scss";
+
+// Components
+@use 'home.scss';
+@use 'destination.scss';
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: variables.$font-family;
+  color: variables.$white;
+}
+
+input[type="checkbox"] {
+  display: none;
+}
+
+.active {
+  border-right: 3px solid variables.$white;
+}
+
+// Media Queries
+// Tablet
+@media (min-width: 768px) {
+  .active {
+    border-right: none;
+    padding-bottom: 0.5rem;
+    border-bottom: 3px solid variables.$white;
+  }
+}

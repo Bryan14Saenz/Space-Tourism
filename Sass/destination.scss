@@ -1,0 +1,87 @@
+@use 'variables.scss';
+@use 'mixins.scss';
+
+.section-content {
+  text-align: center;
+  padding: 1.5rem;
+
+  .container {
+    h2 {
+      font-weight: 100;
+      font-size: variables.$font-size-7;
+      letter-spacing: variables.$letter-spacing-2;
+      margin-bottom: 1.5rem;
+
+      span {
+        color: #727272;
+      }
+    }
+
+    &__img {
+      margin-bottom: 1.8rem;
+
+      img {
+        width: 9rem;
+      }
+    }
+
+    &__explation {
+      padding-top: 1.8rem;
+
+      ul {
+        display: flex;
+        justify-content: center;
+        gap: 2rem;
+
+        li {
+          list-style: none;
+
+          button {
+            border: none;
+            font-weight: 100;
+            font-size: variables.$font-size-8;
+            color: variables.$white;
+            background-color: transparent;
+          }
+        }
+      }
+
+      .explation__text {
+        margin: 1.5rem 0;
+
+        h2 {
+          font-weight: 100;
+          font-size: variables.$font-size-3;
+        }
+
+        p {
+          font-weight: 100;
+          font-size: variables.$font-size-7;
+        }
+      }
+
+      .explation__statistics {
+        margin: 1.5rem 0;
+
+        .statistics__distance,
+        .statistics__travel {
+          margin: 1.5rem 0;
+
+          p {
+            font-size: variables.$font-size-6;
+            font-weight: 100;
+            margin-bottom: 0.8rem;
+          }
+
+          h3 {
+            font-weight: 100;
+            font-size: variables.$font-size-4;
+          }
+        }
+      }
+    }
+  }
+}
+
+// Media queries
+// Border de los botones de destination
