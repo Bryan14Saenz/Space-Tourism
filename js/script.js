@@ -64,7 +64,7 @@ window.addEventListener("DOMContentLoaded", () => {
   bodyBackground(); // Llamada a la función de Background
 
   btnExplore.addEventListener("click", () => {
-    location.href = "/html/destination.html";
+    location.href = "/html/destination";
   }); // Llamada a la función de Button Explore
 }); // Inicializacion de la funciones por defecto
 
