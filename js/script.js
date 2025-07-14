@@ -8,13 +8,13 @@ const technology = document.getElementById("technology"); // Technology
 
 // Funciones
 const bordeIndicador = () => {
-  if (location.pathname === "/index.html") {
+  if (location.pathname === "/") {
     listItems[0].classList.add("active");
-  } else if (location.pathname === "/html/destination.html") {
+  } else if (location.pathname === "/html/destination") {
     listItems[1].classList.add("active");
-  } else if (location.pathname === "/html/crew.html") {
+  } else if (location.pathname === "/html/crew") {
     listItems[2].classList.add("active");
-  } else if (location.pathname === "/html/technology.html") {
+  } else if (location.pathname === "/html/technology") {
     listItems[3].classList.add("active");
   }
 
@@ -73,7 +73,7 @@ window.addEventListener("resize", () => {
 }); // Llamada a la función con el evento Resize
 
 window.addEventListener("load", () => {
-  if (location.pathname === "/html/destination.html") {
+  if (location.pathname === "/html/destination") {
     getData().then((data) => {
       const container = document.createElement("div");
 
@@ -188,7 +188,7 @@ window.addEventListener("load", () => {
         destination.appendChild(container);
       }
     }); // Cambio de destinos al hacer click en los botones
-  } else if (location.pathname === "/html/crew.html") {
+  } else if (location.pathname === "/html/crew") {
     getData().then((data) => {
       const container = document.createElement("div");
 
@@ -288,7 +288,7 @@ window.addEventListener("load", () => {
         crew.appendChild(container);
       }
     }); // Cambio de crew al hacer click en los botones
-  } else if (location.pathname === "/html/technology.html") {
+  } else if (location.pathname === "/html/technology") {
     getData().then((data) => {
       const container = document.createElement("div");
 
