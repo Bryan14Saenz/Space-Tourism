@@ -62,10 +62,6 @@ const bodyBackground = () => {
 window.addEventListener("DOMContentLoaded", () => {
   bordeIndicador(); // Llamada a la función de List Items
   bodyBackground(); // Llamada a la función de Background
-
-  btnExplore.addEventListener("click", () => {
-    location.href = "/html/destination";
-  }); // Llamada a la función de Button Explore
 }); // Inicializacion de la funciones por defecto
 
 window.addEventListener("resize", () => {
