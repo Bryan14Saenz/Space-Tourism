@@ -4,6 +4,9 @@
 // Components
 @use 'home.scss';
 @use 'destination.scss';
+@use 'crew.scss';
+@use 'technology.scss';
+
 
 * {
   box-sizing: border-box;
@@ -26,6 +29,22 @@ input[type="checkbox"] {
 
 .active {
   border-right: 3px solid variables.$white;
+}
+
+.activeD {
+  border-right: none;
+  padding-bottom: 0.5rem;
+  border-bottom: 3px solid variables.$white;
+}
+
+.activeC {
+  background-color: variables.$white !important;
+}
+
+.activeT {
+  border-radius: 50% !important;
+  color: #000000 !important;
+  background-color: variables.$white !important;
 }
 
 // Media Queries

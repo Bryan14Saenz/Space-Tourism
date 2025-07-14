@@ -2,67 +2,149 @@
   text-align: center;
   padding: 1.5rem;
 }
-.section-content .container h2 {
+.section-content .destination h2 {
   font-weight: 100;
   font-size: 16px;
   letter-spacing: 2px;
   margin-bottom: 1.5rem;
 }
-.section-content .container h2 span {
+.section-content .destination h2 span {
   color: #727272;
 }
-.section-content .container__img {
+.section-content .destination__img {
   margin-bottom: 1.8rem;
 }
-.section-content .container__img img {
+.section-content .destination__img img {
   width: 9rem;
 }
-.section-content .container__explation {
+.section-content .destination__explation {
   padding-top: 1.8rem;
 }
-.section-content .container__explation ul {
+.section-content .destination__explation ul {
   display: flex;
   justify-content: center;
   gap: 2rem;
 }
-.section-content .container__explation ul li {
+.section-content .destination__explation ul li {
   list-style: none;
 }
-.section-content .container__explation ul li button {
+.section-content .destination__explation ul li button {
+  cursor: pointer;
   border: none;
   font-weight: 100;
   font-size: 14px;
   color: #FFFFFF;
   background-color: transparent;
 }
-.section-content .container__explation .explation__text {
+.section-content .destination__explation .explation__text {
   margin: 1.5rem 0;
+  padding: 0 1rem;
 }
-.section-content .container__explation .explation__text h2 {
+.section-content .destination__explation .explation__text h2 {
   font-weight: 100;
   font-size: 56px;
 }
-.section-content .container__explation .explation__text p {
+.section-content .destination__explation .explation__text p {
   font-weight: 100;
   font-size: 16px;
 }
-.section-content .container__explation .explation__statistics {
+.section-content .destination__explation .explation__statistics {
   margin: 1.5rem 0;
 }
-.section-content .container__explation .explation__statistics .statistics__distance,
-.section-content .container__explation .explation__statistics .statistics__travel {
+.section-content .destination__explation .explation__statistics .statistics__distance,
+.section-content .destination__explation .explation__statistics .statistics__travel {
   margin: 1.5rem 0;
 }
-.section-content .container__explation .explation__statistics .statistics__distance p,
-.section-content .container__explation .explation__statistics .statistics__travel p {
+.section-content .destination__explation .explation__statistics .statistics__distance p,
+.section-content .destination__explation .explation__statistics .statistics__travel p {
   font-size: 18px;
   font-weight: 100;
   margin-bottom: 0.8rem;
 }
-.section-content .container__explation .explation__statistics .statistics__distance h3,
-.section-content .container__explation .explation__statistics .statistics__travel h3 {
+.section-content .destination__explation .explation__statistics .statistics__distance h3,
+.section-content .destination__explation .explation__statistics .statistics__travel h3 {
   font-weight: 100;
   font-size: 32px;
+}
+
+@media screen and (min-width: 768px) {
+  .section-content {
+    padding: 2.5rem 0;
+  }
+  .section-content .destination {
+    padding: 0 2.5rem;
+  }
+  .section-content .destination h2 {
+    text-align: left;
+  }
+  .section-content .destination__img {
+    margin-bottom: 1.8rem;
+  }
+  .section-content .destination__img img {
+    width: 16rem;
+  }
+  .section-content .destination__explation {
+    width: 70%;
+    margin: 0 auto;
+    padding-top: 2rem;
+  }
+  .section-content .destination__explation ul {
+    gap: 2.5rem;
+  }
+  .section-content .destination__explation ul li button {
+    font-size: 16px;
+  }
+  .section-content .destination__explation .explation__text h2 {
+    text-align: center;
+    font-size: 100px;
+  }
+  .section-content .destination__explation .explation__text p {
+    font-size: 16px;
+  }
+  .section-content .destination__explation .explation__statistics {
+    display: flex;
+    justify-content: space-between;
+  }
+  .section-content .destination__explation .explation__statistics .statistics__distance p,
+  .section-content .destination__explation .explation__statistics .statistics__travel p {
+    font-size: 16px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .section-content {
+    padding: 3rem 0;
+  }
+  .section-content .destination {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    width: 75%;
+    margin: 0 auto;
+    gap: 3rem;
+  }
+  .section-content .destination h2 {
+    grid-area: 1/1/2/3;
+    font-size: 18px;
+  }
+  .section-content .destination__img {
+    margin-bottom: 1.8rem;
+  }
+  .section-content .destination__img img {
+    width: 30rem;
+  }
+  .section-content .destination__explation {
+    width: 100%;
+  }
+  .section-content .destination__explation ul li button {
+    font-size: 18px;
+  }
+  .section-content .destination__explation .explation__text h2 {
+    font-size: 144px;
+  }
+  .section-content .destination__explation .explation__text p {
+    text-wrap: balance;
+    font-size: 16px;
+  }
 }
 
 /*# sourceMappingURL=destination.css.map */

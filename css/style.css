@@ -240,69 +240,433 @@
   text-align: center;
   padding: 1.5rem;
 }
-.section-content .container h2 {
+.section-content .destination h2 {
   font-weight: 100;
   font-size: 16px;
   letter-spacing: 2px;
   margin-bottom: 1.5rem;
 }
-.section-content .container h2 span {
+.section-content .destination h2 span {
   color: #727272;
 }
-.section-content .container__img {
+.section-content .destination__img {
   margin-bottom: 1.8rem;
 }
-.section-content .container__img img {
+.section-content .destination__img img {
   width: 9rem;
 }
-.section-content .container__explation {
+.section-content .destination__explation {
   padding-top: 1.8rem;
 }
-.section-content .container__explation ul {
+.section-content .destination__explation ul {
   display: flex;
   justify-content: center;
   gap: 2rem;
 }
-.section-content .container__explation ul li {
+.section-content .destination__explation ul li {
   list-style: none;
 }
-.section-content .container__explation ul li button {
+.section-content .destination__explation ul li button {
+  cursor: pointer;
   border: none;
   font-weight: 100;
   font-size: 14px;
   color: #FFFFFF;
   background-color: transparent;
 }
-.section-content .container__explation .explation__text {
+.section-content .destination__explation .explation__text {
   margin: 1.5rem 0;
+  padding: 0 1rem;
 }
-.section-content .container__explation .explation__text h2 {
+.section-content .destination__explation .explation__text h2 {
   font-weight: 100;
   font-size: 56px;
 }
-.section-content .container__explation .explation__text p {
+.section-content .destination__explation .explation__text p {
   font-weight: 100;
   font-size: 16px;
 }
-.section-content .container__explation .explation__statistics {
+.section-content .destination__explation .explation__statistics {
   margin: 1.5rem 0;
 }
-.section-content .container__explation .explation__statistics .statistics__distance,
-.section-content .container__explation .explation__statistics .statistics__travel {
+.section-content .destination__explation .explation__statistics .statistics__distance,
+.section-content .destination__explation .explation__statistics .statistics__travel {
   margin: 1.5rem 0;
 }
-.section-content .container__explation .explation__statistics .statistics__distance p,
-.section-content .container__explation .explation__statistics .statistics__travel p {
+.section-content .destination__explation .explation__statistics .statistics__distance p,
+.section-content .destination__explation .explation__statistics .statistics__travel p {
   font-size: 18px;
   font-weight: 100;
   margin-bottom: 0.8rem;
 }
-.section-content .container__explation .explation__statistics .statistics__distance h3,
-.section-content .container__explation .explation__statistics .statistics__travel h3 {
+.section-content .destination__explation .explation__statistics .statistics__distance h3,
+.section-content .destination__explation .explation__statistics .statistics__travel h3 {
   font-weight: 100;
   font-size: 32px;
 }
 
+@media screen and (min-width: 768px) {
+  .section-content {
+    padding: 2.5rem 0;
+  }
+  .section-content .destination {
+    padding: 0 2.5rem;
+  }
+  .section-content .destination h2 {
+    text-align: left;
+  }
+  .section-content .destination__img {
+    margin-bottom: 1.8rem;
+  }
+  .section-content .destination__img img {
+    width: 16rem;
+  }
+  .section-content .destination__explation {
+    width: 70%;
+    margin: 0 auto;
+    padding-top: 2rem;
+  }
+  .section-content .destination__explation ul {
+    gap: 2.5rem;
+  }
+  .section-content .destination__explation ul li button {
+    font-size: 16px;
+  }
+  .section-content .destination__explation .explation__text h2 {
+    text-align: center;
+    font-size: 100px;
+  }
+  .section-content .destination__explation .explation__text p {
+    font-size: 16px;
+  }
+  .section-content .destination__explation .explation__statistics {
+    display: flex;
+    justify-content: space-between;
+  }
+  .section-content .destination__explation .explation__statistics .statistics__distance p,
+  .section-content .destination__explation .explation__statistics .statistics__travel p {
+    font-size: 16px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .section-content {
+    padding: 3rem 0;
+  }
+  .section-content .destination {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    width: 75%;
+    margin: 0 auto;
+    gap: 3rem;
+  }
+  .section-content .destination h2 {
+    grid-area: 1/1/2/3;
+    font-size: 18px;
+  }
+  .section-content .destination__img {
+    margin-bottom: 1.8rem;
+  }
+  .section-content .destination__img img {
+    width: 30rem;
+  }
+  .section-content .destination__explation {
+    width: 100%;
+  }
+  .section-content .destination__explation ul li button {
+    font-size: 18px;
+  }
+  .section-content .destination__explation .explation__text h2 {
+    font-size: 144px;
+  }
+  .section-content .destination__explation .explation__text p {
+    text-wrap: balance;
+    font-size: 16px;
+  }
+}
+.section-content {
+  text-align: center;
+}
+.section-content .crew {
+  padding: 1.5rem 1rem;
+}
+.section-content .crew h2 {
+  font-weight: 100;
+  font-size: 16px;
+  letter-spacing: 2px;
+  margin-bottom: 1.5rem;
+}
+.section-content .crew h2 span {
+  color: #727272;
+}
+.section-content .crew__text {
+  margin-top: 3rem;
+  margin-bottom: 1rem;
+}
+.section-content .crew__text p {
+  text-transform: uppercase;
+  font-weight: 100;
+  font-size: 18px;
+  letter-spacing: 2px;
+  margin-bottom: 0.8rem;
+  color: #727272;
+}
+.section-content .crew__text h3 {
+  font-weight: 100;
+  font-size: 32px;
+}
+.section-content .crew__text .crew__bio {
+  margin-top: 2rem;
+}
+.section-content .crew__text .crew__bio p {
+  text-wrap: balance;
+  text-transform: none;
+  font-weight: 100;
+  color: #FFFFFF;
+  font-size: 14px;
+}
+.section-content .crew__nav {
+  padding: 2rem 0;
+}
+.section-content .crew__nav ul {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+}
+.section-content .crew__nav ul li {
+  list-style: none;
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: 50%;
+  background-color: #727272;
+}
+.section-content .crew__nav ul li button {
+  cursor: pointer;
+  border: none;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background: transparent;
+}
+.section-content .crew__img {
+  margin-top: 1.8rem;
+}
+.section-content .crew__img img {
+  width: 9rem;
+}
+
+@media screen and (min-width: 768px) {
+  .section-content {
+    text-align: center;
+    padding: 1.5rem;
+  }
+  .section-content .crew__text p {
+    font-size: 28px;
+  }
+  .section-content .crew__text h3 {
+    font-size: 56px;
+  }
+  .section-content .crew__text .crew__bio p {
+    width: 75%;
+    margin: 0 auto;
+    line-height: 1.8rem;
+    font-size: 14px;
+  }
+  .section-content .crew__nav {
+    padding: 2.5rem 0;
+  }
+  .section-content .crew__nav ul li {
+    width: 0.8rem;
+    height: 0.8rem;
+  }
+  .section-content .crew__img img {
+    width: 16rem;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .section-content .crew {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: stretch;
+    justify-items: flex-start;
+    padding: 1rem 5rem;
+  }
+  .section-content .crew h2 {
+    grid-area: 1/1/1/3;
+    font-size: 18px;
+  }
+  .section-content .crew__text {
+    text-align: left;
+    grid-area: 2/1/2/2;
+  }
+  .section-content .crew__text p {
+    font-size: 32px;
+  }
+  .section-content .crew__text h3 {
+    font-size: 100px;
+  }
+  .section-content .crew__text .crew__bio p {
+    margin: 0;
+    font-size: 16px;
+  }
+  .section-content .crew__nav {
+    grid-area: 3/1/4/3;
+    padding: 0;
+  }
+  .section-content .crew__nav ul li {
+    width: 0.8rem;
+    height: 0.8rem;
+  }
+  .section-content .crew__img img {
+    width: 25rem;
+  }
+}
+.section-content {
+  text-align: center;
+  padding: 1.5rem 0;
+}
+.section-content .tech h2 {
+  font-weight: 100;
+  font-size: 16px;
+  letter-spacing: 2px;
+  margin-bottom: 1.5rem;
+}
+.section-content .tech h2 span {
+  color: #727272;
+}
+.section-content .tech__img {
+  margin-bottom: 1.8rem;
+}
+.section-content .tech__img img {
+  object-fit: cover;
+  width: 100%;
+  height: auto;
+}
+.section-content .tech__container {
+  padding-top: 0;
+}
+.section-content .tech__container ul {
+  display: flex;
+  justify-content: center;
+  gap: 2.5rem;
+  margin-bottom: 2rem;
+}
+.section-content .tech__container ul li {
+  list-style: none;
+  padding: 1rem 1.3rem;
+  border-radius: 50px;
+  border: 1px solid #FFFFFF;
+  color: #FFFFFF;
+  background-color: transparent;
+}
+.section-content .tech__container ul li button {
+  cursor: pointer;
+  border: none;
+  width: 100%;
+  height: 100%;
+  padding: 0.5rem;
+  font-weight: 100;
+  font-size: 16px;
+  color: inherit;
+  background: transparent;
+}
+.section-content .tech__container .tech__text {
+  margin-top: 3rem;
+}
+.section-content .tech__container .tech__text h2 {
+  font-weight: 100;
+  font-size: 16px;
+  letter-spacing: 2px;
+  color: #727272;
+}
+.section-content .tech__container .tech__text div {
+  margin-top: 1rem;
+  padding: 0 1.5rem;
+}
+.section-content .tech__container .tech__text div p {
+  font-weight: 100;
+  font-size: 18px;
+  line-height: 1.5rem;
+}
+.section-content .tech__container .tech__text div h2 {
+  font-weight: 100;
+  font-size: 32px;
+  line-height: 1rem;
+  color: #FFFFFF;
+}
+
+@media screen and (min-width: 768px) {
+  .section-content {
+    padding: 2.5rem 0;
+  }
+  .section-content .tech h2 {
+    text-align: left;
+    padding-left: 2.5rem;
+    font-size: 18px;
+  }
+  .section-content .tech__img {
+    margin: 3rem 0;
+  }
+  .section-content .tech__container ul {
+    gap: 2.5rem;
+  }
+  .section-content .tech__container .tech__text {
+    margin-top: 3rem;
+  }
+  .section-content .tech__container .tech__text h2 {
+    text-align: center;
+    font-size: 28px;
+  }
+  .section-content .tech__container .tech__text .text__content p {
+    width: 75%;
+    margin: 0 auto;
+    font-size: 18px;
+    line-height: 2rem;
+  }
+  .section-content .tech__container .tech__text .text__content h2 {
+    margin-bottom: 2.5rem;
+    font-size: 56px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .section-content .tech {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .section-content .tech h2 {
+    padding-left: 6rem;
+  }
+  .section-content .tech__img {
+    display: none;
+  }
+  .section-content .tech__container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0 6rem;
+  }
+  .section-content .tech__container ul {
+    gap: 2.5rem;
+  }
+  .section-content .tech__container .tech__text {
+    margin-top: 3rem;
+  }
+  .section-content .tech__container .tech__text h2 {
+    text-align: center;
+    font-size: 28px;
+  }
+  .section-content .tech__container .tech__text .text__content p {
+    width: 75%;
+    margin: 0 auto;
+    font-size: 18px;
+    line-height: 2rem;
+  }
+  .section-content .tech__container .tech__text .text__content h2 {
+    margin-bottom: 2.5rem;
+    font-size: 56px;
+  }
+}
 * {
   box-sizing: border-box;
   margin: 0;
@@ -324,6 +688,22 @@ input[type=checkbox] {
 
 .active {
   border-right: 3px solid #FFFFFF;
+}
+
+.activeD {
+  border-right: none;
+  padding-bottom: 0.5rem;
+  border-bottom: 3px solid #FFFFFF;
+}
+
+.activeC {
+  background-color: #FFFFFF !important;
+}
+
+.activeT {
+  border-radius: 50% !important;
+  color: #000000 !important;
+  background-color: #FFFFFF !important;
 }
 
 @media (min-width: 768px) {

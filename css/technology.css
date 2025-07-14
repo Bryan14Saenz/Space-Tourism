@@ -1,0 +1,148 @@
+.section-content {
+  text-align: center;
+  padding: 1.5rem 0;
+}
+.section-content .tech h2 {
+  font-weight: 100;
+  font-size: 16px;
+  letter-spacing: 2px;
+  margin-bottom: 1.5rem;
+}
+.section-content .tech h2 span {
+  color: #727272;
+}
+.section-content .tech__img {
+  margin-bottom: 1.8rem;
+}
+.section-content .tech__img img {
+  object-fit: cover;
+  width: 100%;
+  height: auto;
+}
+.section-content .tech__container {
+  padding-top: 0;
+}
+.section-content .tech__container ul {
+  display: flex;
+  justify-content: center;
+  gap: 2.5rem;
+  margin-bottom: 2rem;
+}
+.section-content .tech__container ul li {
+  list-style: none;
+  padding: 1rem 1.3rem;
+  border-radius: 50px;
+  border: 1px solid #FFFFFF;
+  color: #FFFFFF;
+  background-color: transparent;
+}
+.section-content .tech__container ul li button {
+  cursor: pointer;
+  border: none;
+  width: 100%;
+  height: 100%;
+  padding: 0.5rem;
+  font-weight: 100;
+  font-size: 16px;
+  color: inherit;
+  background: transparent;
+}
+.section-content .tech__container .tech__text {
+  margin-top: 3rem;
+}
+.section-content .tech__container .tech__text h2 {
+  font-weight: 100;
+  font-size: 16px;
+  letter-spacing: 2px;
+  color: #727272;
+}
+.section-content .tech__container .tech__text div {
+  margin-top: 1rem;
+  padding: 0 1.5rem;
+}
+.section-content .tech__container .tech__text div p {
+  font-weight: 100;
+  font-size: 18px;
+  line-height: 1.5rem;
+}
+.section-content .tech__container .tech__text div h2 {
+  font-weight: 100;
+  font-size: 32px;
+  line-height: 1rem;
+  color: #FFFFFF;
+}
+
+@media screen and (min-width: 768px) {
+  .section-content {
+    padding: 2.5rem 0;
+  }
+  .section-content .tech h2 {
+    text-align: left;
+    padding-left: 2.5rem;
+    font-size: 18px;
+  }
+  .section-content .tech__img {
+    margin: 3rem 0;
+  }
+  .section-content .tech__container ul {
+    gap: 2.5rem;
+  }
+  .section-content .tech__container .tech__text {
+    margin-top: 3rem;
+  }
+  .section-content .tech__container .tech__text h2 {
+    text-align: center;
+    font-size: 28px;
+  }
+  .section-content .tech__container .tech__text .text__content p {
+    width: 75%;
+    margin: 0 auto;
+    font-size: 18px;
+    line-height: 2rem;
+  }
+  .section-content .tech__container .tech__text .text__content h2 {
+    margin-bottom: 2.5rem;
+    font-size: 56px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .section-content .tech {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .section-content .tech h2 {
+    padding-left: 6rem;
+  }
+  .section-content .tech__img {
+    display: none;
+  }
+  .section-content .tech__container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0 6rem;
+  }
+  .section-content .tech__container ul {
+    gap: 2.5rem;
+  }
+  .section-content .tech__container .tech__text {
+    margin-top: 3rem;
+  }
+  .section-content .tech__container .tech__text h2 {
+    text-align: center;
+    font-size: 28px;
+  }
+  .section-content .tech__container .tech__text .text__content p {
+    width: 75%;
+    margin: 0 auto;
+    font-size: 18px;
+    line-height: 2rem;
+  }
+  .section-content .tech__container .tech__text .text__content h2 {
+    margin-bottom: 2.5rem;
+    font-size: 56px;
+  }
+}
+
+/*# sourceMappingURL=technology.css.map */
