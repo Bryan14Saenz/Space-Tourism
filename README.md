@@ -88,5 +88,3 @@ El diseño está inspirado en el desafío original de [Frontend Mentor](https://
 ## 🌍 Demo en línea
 
 🟢 [spacetourismfm.netlify.app](https://spacetourismfm.netlify.app)
-
-¿Querés que la navegación sea tipo SPA o preferís mantenerlo como multipágina tradicional? 🌌
