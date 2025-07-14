@@ -34,10 +34,10 @@ const getData = async () => {
 
 const bodyBackground = () => {
   const rutas = {
-    "/index.html": "home",
-    "/html/destination.html": "destination",
-    "/html/crew.html": "crew",
-    "/html/technology.html": "technology",
+    "/": "home",
+    "/html/destination": "destination",
+    "/html/crew": "crew",
+    "/html/technology": "technology",
   };
 
   const width = window.innerWidth;
